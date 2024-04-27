@@ -84,5 +84,7 @@
    - Visualizations:
      ![IMG_3839](https://github.com/den50791/MIST4610-Group-7-Project-2/assets/163002845/6fd34b03-c833-4269-92f7-b22f0fb21ae3)
      ![IMG_3838](https://github.com/den50791/MIST4610-Group-7-Project-2/assets/163002845/1d970c7e-6c42-4e3d-a0ce-5ac078aa6709)
+     ![image](https://github.com/bendeanwilly/ProjectTwo_G7_MIST4610/assets/150070990/8b5c903e-a5e3-42bc-bb3f-69baabab4638)
+
    - Implications:
    - Citations:
