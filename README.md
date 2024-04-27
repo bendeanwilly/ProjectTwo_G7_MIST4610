@@ -85,6 +85,7 @@
      ![IMG_3839](https://github.com/den50791/MIST4610-Group-7-Project-2/assets/163002845/6fd34b03-c833-4269-92f7-b22f0fb21ae3)
      ![IMG_3838](https://github.com/den50791/MIST4610-Group-7-Project-2/assets/163002845/1d970c7e-6c42-4e3d-a0ce-5ac078aa6709)
      ![image](https://github.com/bendeanwilly/ProjectTwo_G7_MIST4610/assets/150070990/8b5c903e-a5e3-42bc-bb3f-69baabab4638)
+   - Limitations: From the California datasets, we concluded that only disease type and hospital rating were indicative of risk-adjusted mortality rates in California, not the poverty rate. However, it should not be assumed that impoverished areas receive the same amount of medical care as affluent areas. This was a limitation of our analysis, as it is possible and very likely that impoverished individuals suffer from lack of healthcare. What can be deduced from our analysis is that if a person is able to receive medical care in an impoverished area, they should not notice a significant difference from the care that they would receive in affluent areas. 
 
    - Implications:
    - Citations:
