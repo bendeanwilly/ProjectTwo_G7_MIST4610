@@ -74,9 +74,8 @@
    - Importance: The question is important because it reflects on the understanding of how one's financial situation can affect the outcome of one's health, specifically mortality rates. Economically, there may be costs or threats to the economy as a state or by county for poverty-related inequalities. From this, authorities in the state of California may use this insight to hold accountability and implement policies to target possible health disparities regardless of one's income. However, if there is no clear relationship, officials would be encouraged to investigate other factors besides poverty rates to determine the overall health outcomes of the people.
    - Tie to Dataset: This relates to the second and third datasets because it provides information on the risk-adjusted mortality rates, county, and CPM poverty ratings with some data manipulation.
    
-## Data Manipulations:
-   - (Describe manipulations to dataset)
-   - Purpose: 
+## Data Manipulations: 
+- Initially, when comparing poverty rate to RAR, many hospitals were causing the poverty rate by county to appear multiple times. To consolidate the RAR into counties instead of hospitals, we created the following calculatedd field. {FIXED [County] : AVG([Risk-adjusted Rate])}
 
 ## Analysis and Results:
    - Our second question showed that the poverty rate by county in California and its respective average risk-adjusted rate showed an R-squared value of 0.0061 and a P-value of 0.5797, indicating that 0.061% of the variability observed in the risk-adjusted mortality rate is explained by the regression model. The P-value of 0.57 is high and not statistically significant, suggesting that the poverty rate by county does not determine ramr. The p-value indicates that there is a 57% chance we would get the results of the observation if poverty rate and ramr were not correlated.
