@@ -13,7 +13,7 @@
 ## Dataset Description:
 
 ### Dataset 1: California Hospital Performance Ratings
-  - **Source**: [Data.gov](https://catalog.data.gov/dataset/california-hospital-performance-ratings-91d9b/resource/7ac54225-fb51-40c3-b2fb-9979a4bbc620)  
+  - **Source**: [Data.gov/Dataset1](https://catalog.data.gov/dataset/california-hospital-performance-ratings-91d9b/resource/7ac54225-fb51-40c3-b2fb-9979a4bbc620)  
   - **Dimensions**: 25974 rows X 13 columns
   
   - **Columns**: 
@@ -35,7 +35,7 @@
   - **Data Types**: Numeric (Integer), Text (String), and Numeric (Float)
 
 ### Dataset 2: California Hospital Inpatient Mortality Rates and Quality Ratings
-  - **Source**: [Data.gov](https://catalog.data.gov/dataset/california-hospital-inpatient-mortality-rates-and-quality-ratings-c11e9)  
+  - **Source**: [Data.gov/Dataset2](https://catalog.data.gov/dataset/california-hospital-inpatient-mortality-rates-and-quality-ratings-c11e9)  
   - **Dimensions**: 53216 rows X 11 columns
   
   - **Columns**:
@@ -74,17 +74,15 @@
    - Importance: The question is important because it reflects on the understanding of how one's financial situation can affect the outcome of one's health, specifically mortality rates. Economically, there may be costs or threats to the economy as a state or by county for poverty-related inequalities. From this, authorities in the state of California may use this insight to hold accountability and implement policies to target possible health disparities regardless of one's income. However, if there is no clear relationship, officials would be encouraged to investigate other factors besides poverty rates to determine the overall health outcomes of the people.
    - Tie to Dataset: This relates to the second and third datasets because it provides information on the risk-adjusted mortality rates, county, and CPM poverty ratings with some data manipulation.
    
-## Data Manipulations: 
-- Initially, when comparing poverty rate to RAR, many hospitals were causing the poverty rate by county to appear multiple times. To consolidate the RAR into counties instead of hospitals, we created the following calculated field. {FIXED [County] : AVG([Risk-adjusted Rate])}
+## Data Manipulations:
+   - Manipulation 1: Initially, when comparing poverty rate to RAR, many hospitals were causing the poverty rate by county to appear multiple times. To consolidate the RAR into counties instead of hospitals, we created the following calculated field. {FIXED [County] : AVG([Risk-adjusted Rate])}
+   - Purpose: The purpose of this manipulation was to create a more accurate representation of risk-adjusted mortality rates across different counties in California. By consolidating the RAR at the county level, we aimed to eliminate the impact of individual hospitals that may appear multiple times in the dataset, allowing us to better understand the relationship between the poverty rates and mortality rates at a broader geographic scale. This approach helped us focus on regional patterns and variations in mortality rates, independent of specific hospital-level factors. 
 
 ## Analysis and Results:
-   - Our second question showed that the poverty rate by county in California and its respective average risk-adjusted rate showed an R-squared value of 0.0061 and a P-value of 0.5797, indicating that 0.061% of the variability observed in the risk-adjusted mortality rate is explained by the regression model. The P-value of 0.57 is high and not statistically significant, suggesting that the poverty rate by county does not determine ramr. The p-value indicates that there is a 57% chance we would get the results of the observation if poverty rate and ramr were not correlated.
-     
+  - Our first question explores how hospital ratings in California influence the average risk-adjusted mortality rate (RAMR) for various medical procedures using data from the California Hospital Inpatient Mortality Rates and Quality Ratings dataset. This investigation is crucial for understanding the impact of hospital performance on patient outcomes, aiding hospitals in identifying areas for quality improvement and empowering patients to make informed healthcare decisions. Through a geographic visualization, we observed that certain procedures had higher risk-adjusted mortality rates in hospitals with lower ratings, highlighting the significance of hospital quality in healthcare delivery.
+  - Our second question showed that the poverty rate by county in California and its respective average risk-adjusted rate showed an R-squared value of 0.0061 and a P-value of 0.5797, indicating that 0.061% of the variability observed in the risk-adjusted mortality rate is explained by the regression model. The P-value of 0.57 is high and not statistically significant, suggesting that the poverty rate by county does not determine ramr. The p-value indicates that there is a 57% chance we would get the results of the observation if poverty rate and ramr were not correlated.
    - Visualizations:
      ![IMG_3839](https://github.com/den50791/MIST4610-Group-7-Project-2/assets/163002845/6fd34b03-c833-4269-92f7-b22f0fb21ae3)
      ![IMG_3838](https://github.com/den50791/MIST4610-Group-7-Project-2/assets/163002845/1d970c7e-6c42-4e3d-a0ce-5ac078aa6709)
-     ![image](https://github.com/bendeanwilly/ProjectTwo_G7_MIST4610/assets/150070990/8b5c903e-a5e3-42bc-bb3f-69baabab4638)
-   - Limitations: From the California datasets, we concluded that only disease type and hospital rating were indicative of risk-adjusted mortality rates in California, not the poverty rate. However, it should not be assumed that impoverished areas receive the same amount of medical care as affluent areas. This was a limitation of our analysis, as it is possible and very likely that impoverished individuals suffer from lack of healthcare. What can be deduced from our analysis is that if a person is able to receive medical care in an impoverished area, they should not notice a significant difference from the care that they would receive in affluent areas. 
-
-   - Implications:
-   - Citations:
+     ![image](https://github.com/den50791/MIST4610-Group-7-Project-2/assets/163002845/a6d9b112-2c1e-4138-9ef7-303e93f2adca)
+   - Limitations: From the California datasets, we concluded that only disease type and hospital rating were indicative of risk-adjusted mortality rates in California, not the poverty rate. However, it should not be assumed that impoverished areas receive the same amount of medical care as affluent areas. This was a limitation of our analysis, as it is possible and very likely that impoverished individuals suffer from lack of healthcare. What can be deduced from our analysis is that if a person is able to receive medical care in an impoverished area, they should not notice a significant difference from the care that they would receive in affluent areas.
